@@ -1,0 +1,493 @@
+# CatalogV1alpha1Marketplace
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Group** | Pointer to **string** | Resource belongs to the catalog group. Cannot be updated. The server infers this from the endpoint the client submits the request to. | [optional] [readonly] [default to "catalog"]
+**ApiVersion** | Pointer to **string** | Resource version is v1alpha1. The version defines the structure of the resource. Cannot be updated. The server infers this from the endpoint the client submits the request to. | [optional] [readonly] [default to "v1alpha1"]
+**Kind** | Pointer to **string** | Resource of kind Marketplace. Cannot be updated. The server infers this from the endpoint the client submits the request to. | [optional] [readonly] [default to "Marketplace"]
+**Name** | Pointer to **string** | Name of the Marketplace. Marketplace name is unique and cannot be updated. The characters allowed in names are: digits (0-9), lower case letters (a-z), -, and . | [optional] 
+**Title** | Pointer to **string** | The friendly name of the Marketplace. | [optional] 
+**Metadata** | Pointer to [**ApiV1Metadata**](ApiV1Metadata.md) |  | [optional] 
+**Owner** | Pointer to [**ApiV1Owner**](ApiV1Owner.md) |  | [optional] 
+**Finalizers** | Pointer to [**[]ApiV1Finalizer**](ApiV1Finalizer.md) | List of finalizers | [optional] 
+**Attributes** | Pointer to **map[string]string** | Custom attributes added to objects. | [optional] 
+**Tags** | Pointer to **[]string** | List of tags. | [optional] 
+**Spec** | [**CatalogV1alpha1MarketplaceSpec**](CatalogV1alpha1MarketplaceSpec.md) |  | 
+**Billing** | Pointer to [**CatalogV1alpha1MarketplaceBilling**](CatalogV1alpha1MarketplaceBilling.md) |  | [optional] 
+**Languages** | Pointer to [**ApiV1Languages**](ApiV1Languages.md) |  | [optional] 
+**LanguagesEnUs** | Pointer to [**ApiV1Language**](ApiV1Language.md) |  | [optional] 
+**LanguagesPtBr** | Pointer to [**ApiV1Language**](ApiV1Language.md) |  | [optional] 
+**LanguagesDeDe** | Pointer to [**ApiV1Language**](ApiV1Language.md) |  | [optional] 
+**LanguagesFrFr** | Pointer to [**ApiV1Language**](ApiV1Language.md) |  | [optional] 
+**Embedded** | Pointer to [**ApiV1Embedded**](ApiV1Embedded.md) |  | [optional] 
+
+## Methods
+
+### NewCatalogV1alpha1Marketplace
+
+`func NewCatalogV1alpha1Marketplace(spec CatalogV1alpha1MarketplaceSpec, ) *CatalogV1alpha1Marketplace`
+
+NewCatalogV1alpha1Marketplace instantiates a new CatalogV1alpha1Marketplace object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewCatalogV1alpha1MarketplaceWithDefaults
+
+`func NewCatalogV1alpha1MarketplaceWithDefaults() *CatalogV1alpha1Marketplace`
+
+NewCatalogV1alpha1MarketplaceWithDefaults instantiates a new CatalogV1alpha1Marketplace object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetGroup
+
+`func (o *CatalogV1alpha1Marketplace) GetGroup() string`
+
+GetGroup returns the Group field if non-nil, zero value otherwise.
+
+### GetGroupOk
+
+`func (o *CatalogV1alpha1Marketplace) GetGroupOk() (*string, bool)`
+
+GetGroupOk returns a tuple with the Group field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGroup
+
+`func (o *CatalogV1alpha1Marketplace) SetGroup(v string)`
+
+SetGroup sets Group field to given value.
+
+### HasGroup
+
+`func (o *CatalogV1alpha1Marketplace) HasGroup() bool`
+
+HasGroup returns a boolean if a field has been set.
+
+### GetApiVersion
+
+`func (o *CatalogV1alpha1Marketplace) GetApiVersion() string`
+
+GetApiVersion returns the ApiVersion field if non-nil, zero value otherwise.
+
+### GetApiVersionOk
+
+`func (o *CatalogV1alpha1Marketplace) GetApiVersionOk() (*string, bool)`
+
+GetApiVersionOk returns a tuple with the ApiVersion field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetApiVersion
+
+`func (o *CatalogV1alpha1Marketplace) SetApiVersion(v string)`
+
+SetApiVersion sets ApiVersion field to given value.
+
+### HasApiVersion
+
+`func (o *CatalogV1alpha1Marketplace) HasApiVersion() bool`
+
+HasApiVersion returns a boolean if a field has been set.
+
+### GetKind
+
+`func (o *CatalogV1alpha1Marketplace) GetKind() string`
+
+GetKind returns the Kind field if non-nil, zero value otherwise.
+
+### GetKindOk
+
+`func (o *CatalogV1alpha1Marketplace) GetKindOk() (*string, bool)`
+
+GetKindOk returns a tuple with the Kind field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetKind
+
+`func (o *CatalogV1alpha1Marketplace) SetKind(v string)`
+
+SetKind sets Kind field to given value.
+
+### HasKind
+
+`func (o *CatalogV1alpha1Marketplace) HasKind() bool`
+
+HasKind returns a boolean if a field has been set.
+
+### GetName
+
+`func (o *CatalogV1alpha1Marketplace) GetName() string`
+
+GetName returns the Name field if non-nil, zero value otherwise.
+
+### GetNameOk
+
+`func (o *CatalogV1alpha1Marketplace) GetNameOk() (*string, bool)`
+
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetName
+
+`func (o *CatalogV1alpha1Marketplace) SetName(v string)`
+
+SetName sets Name field to given value.
+
+### HasName
+
+`func (o *CatalogV1alpha1Marketplace) HasName() bool`
+
+HasName returns a boolean if a field has been set.
+
+### GetTitle
+
+`func (o *CatalogV1alpha1Marketplace) GetTitle() string`
+
+GetTitle returns the Title field if non-nil, zero value otherwise.
+
+### GetTitleOk
+
+`func (o *CatalogV1alpha1Marketplace) GetTitleOk() (*string, bool)`
+
+GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTitle
+
+`func (o *CatalogV1alpha1Marketplace) SetTitle(v string)`
+
+SetTitle sets Title field to given value.
+
+### HasTitle
+
+`func (o *CatalogV1alpha1Marketplace) HasTitle() bool`
+
+HasTitle returns a boolean if a field has been set.
+
+### GetMetadata
+
+`func (o *CatalogV1alpha1Marketplace) GetMetadata() ApiV1Metadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *CatalogV1alpha1Marketplace) GetMetadataOk() (*ApiV1Metadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *CatalogV1alpha1Marketplace) SetMetadata(v ApiV1Metadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *CatalogV1alpha1Marketplace) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
+
+### GetOwner
+
+`func (o *CatalogV1alpha1Marketplace) GetOwner() ApiV1Owner`
+
+GetOwner returns the Owner field if non-nil, zero value otherwise.
+
+### GetOwnerOk
+
+`func (o *CatalogV1alpha1Marketplace) GetOwnerOk() (*ApiV1Owner, bool)`
+
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwner
+
+`func (o *CatalogV1alpha1Marketplace) SetOwner(v ApiV1Owner)`
+
+SetOwner sets Owner field to given value.
+
+### HasOwner
+
+`func (o *CatalogV1alpha1Marketplace) HasOwner() bool`
+
+HasOwner returns a boolean if a field has been set.
+
+### GetFinalizers
+
+`func (o *CatalogV1alpha1Marketplace) GetFinalizers() []ApiV1Finalizer`
+
+GetFinalizers returns the Finalizers field if non-nil, zero value otherwise.
+
+### GetFinalizersOk
+
+`func (o *CatalogV1alpha1Marketplace) GetFinalizersOk() (*[]ApiV1Finalizer, bool)`
+
+GetFinalizersOk returns a tuple with the Finalizers field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFinalizers
+
+`func (o *CatalogV1alpha1Marketplace) SetFinalizers(v []ApiV1Finalizer)`
+
+SetFinalizers sets Finalizers field to given value.
+
+### HasFinalizers
+
+`func (o *CatalogV1alpha1Marketplace) HasFinalizers() bool`
+
+HasFinalizers returns a boolean if a field has been set.
+
+### GetAttributes
+
+`func (o *CatalogV1alpha1Marketplace) GetAttributes() map[string]string`
+
+GetAttributes returns the Attributes field if non-nil, zero value otherwise.
+
+### GetAttributesOk
+
+`func (o *CatalogV1alpha1Marketplace) GetAttributesOk() (*map[string]string, bool)`
+
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAttributes
+
+`func (o *CatalogV1alpha1Marketplace) SetAttributes(v map[string]string)`
+
+SetAttributes sets Attributes field to given value.
+
+### HasAttributes
+
+`func (o *CatalogV1alpha1Marketplace) HasAttributes() bool`
+
+HasAttributes returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *CatalogV1alpha1Marketplace) GetTags() []string`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *CatalogV1alpha1Marketplace) GetTagsOk() (*[]string, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *CatalogV1alpha1Marketplace) SetTags(v []string)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *CatalogV1alpha1Marketplace) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
+### GetSpec
+
+`func (o *CatalogV1alpha1Marketplace) GetSpec() CatalogV1alpha1MarketplaceSpec`
+
+GetSpec returns the Spec field if non-nil, zero value otherwise.
+
+### GetSpecOk
+
+`func (o *CatalogV1alpha1Marketplace) GetSpecOk() (*CatalogV1alpha1MarketplaceSpec, bool)`
+
+GetSpecOk returns a tuple with the Spec field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSpec
+
+`func (o *CatalogV1alpha1Marketplace) SetSpec(v CatalogV1alpha1MarketplaceSpec)`
+
+SetSpec sets Spec field to given value.
+
+
+### GetBilling
+
+`func (o *CatalogV1alpha1Marketplace) GetBilling() CatalogV1alpha1MarketplaceBilling`
+
+GetBilling returns the Billing field if non-nil, zero value otherwise.
+
+### GetBillingOk
+
+`func (o *CatalogV1alpha1Marketplace) GetBillingOk() (*CatalogV1alpha1MarketplaceBilling, bool)`
+
+GetBillingOk returns a tuple with the Billing field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBilling
+
+`func (o *CatalogV1alpha1Marketplace) SetBilling(v CatalogV1alpha1MarketplaceBilling)`
+
+SetBilling sets Billing field to given value.
+
+### HasBilling
+
+`func (o *CatalogV1alpha1Marketplace) HasBilling() bool`
+
+HasBilling returns a boolean if a field has been set.
+
+### GetLanguages
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguages() ApiV1Languages`
+
+GetLanguages returns the Languages field if non-nil, zero value otherwise.
+
+### GetLanguagesOk
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesOk() (*ApiV1Languages, bool)`
+
+GetLanguagesOk returns a tuple with the Languages field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLanguages
+
+`func (o *CatalogV1alpha1Marketplace) SetLanguages(v ApiV1Languages)`
+
+SetLanguages sets Languages field to given value.
+
+### HasLanguages
+
+`func (o *CatalogV1alpha1Marketplace) HasLanguages() bool`
+
+HasLanguages returns a boolean if a field has been set.
+
+### GetLanguagesEnUs
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesEnUs() ApiV1Language`
+
+GetLanguagesEnUs returns the LanguagesEnUs field if non-nil, zero value otherwise.
+
+### GetLanguagesEnUsOk
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesEnUsOk() (*ApiV1Language, bool)`
+
+GetLanguagesEnUsOk returns a tuple with the LanguagesEnUs field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLanguagesEnUs
+
+`func (o *CatalogV1alpha1Marketplace) SetLanguagesEnUs(v ApiV1Language)`
+
+SetLanguagesEnUs sets LanguagesEnUs field to given value.
+
+### HasLanguagesEnUs
+
+`func (o *CatalogV1alpha1Marketplace) HasLanguagesEnUs() bool`
+
+HasLanguagesEnUs returns a boolean if a field has been set.
+
+### GetLanguagesPtBr
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesPtBr() ApiV1Language`
+
+GetLanguagesPtBr returns the LanguagesPtBr field if non-nil, zero value otherwise.
+
+### GetLanguagesPtBrOk
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesPtBrOk() (*ApiV1Language, bool)`
+
+GetLanguagesPtBrOk returns a tuple with the LanguagesPtBr field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLanguagesPtBr
+
+`func (o *CatalogV1alpha1Marketplace) SetLanguagesPtBr(v ApiV1Language)`
+
+SetLanguagesPtBr sets LanguagesPtBr field to given value.
+
+### HasLanguagesPtBr
+
+`func (o *CatalogV1alpha1Marketplace) HasLanguagesPtBr() bool`
+
+HasLanguagesPtBr returns a boolean if a field has been set.
+
+### GetLanguagesDeDe
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesDeDe() ApiV1Language`
+
+GetLanguagesDeDe returns the LanguagesDeDe field if non-nil, zero value otherwise.
+
+### GetLanguagesDeDeOk
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesDeDeOk() (*ApiV1Language, bool)`
+
+GetLanguagesDeDeOk returns a tuple with the LanguagesDeDe field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLanguagesDeDe
+
+`func (o *CatalogV1alpha1Marketplace) SetLanguagesDeDe(v ApiV1Language)`
+
+SetLanguagesDeDe sets LanguagesDeDe field to given value.
+
+### HasLanguagesDeDe
+
+`func (o *CatalogV1alpha1Marketplace) HasLanguagesDeDe() bool`
+
+HasLanguagesDeDe returns a boolean if a field has been set.
+
+### GetLanguagesFrFr
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesFrFr() ApiV1Language`
+
+GetLanguagesFrFr returns the LanguagesFrFr field if non-nil, zero value otherwise.
+
+### GetLanguagesFrFrOk
+
+`func (o *CatalogV1alpha1Marketplace) GetLanguagesFrFrOk() (*ApiV1Language, bool)`
+
+GetLanguagesFrFrOk returns a tuple with the LanguagesFrFr field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLanguagesFrFr
+
+`func (o *CatalogV1alpha1Marketplace) SetLanguagesFrFr(v ApiV1Language)`
+
+SetLanguagesFrFr sets LanguagesFrFr field to given value.
+
+### HasLanguagesFrFr
+
+`func (o *CatalogV1alpha1Marketplace) HasLanguagesFrFr() bool`
+
+HasLanguagesFrFr returns a boolean if a field has been set.
+
+### GetEmbedded
+
+`func (o *CatalogV1alpha1Marketplace) GetEmbedded() ApiV1Embedded`
+
+GetEmbedded returns the Embedded field if non-nil, zero value otherwise.
+
+### GetEmbeddedOk
+
+`func (o *CatalogV1alpha1Marketplace) GetEmbeddedOk() (*ApiV1Embedded, bool)`
+
+GetEmbeddedOk returns a tuple with the Embedded field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEmbedded
+
+`func (o *CatalogV1alpha1Marketplace) SetEmbedded(v ApiV1Embedded)`
+
+SetEmbedded sets Embedded field to given value.
+
+### HasEmbedded
+
+`func (o *CatalogV1alpha1Marketplace) HasEmbedded() bool`
+
+HasEmbedded returns a boolean if a field has been set.
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
