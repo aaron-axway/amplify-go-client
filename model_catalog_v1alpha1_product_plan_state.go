@@ -21,10 +21,10 @@ type CatalogV1alpha1ProductPlanState string
 
 // List of catalog.v1alpha1.ProductPlanState
 const (
-	DRAFT CatalogV1alpha1ProductPlanState = "draft"
-	ACTIVE CatalogV1alpha1ProductPlanState = "active"
-	DEPRECATED CatalogV1alpha1ProductPlanState = "deprecated"
-	ARCHIVED CatalogV1alpha1ProductPlanState = "archived"
+	DRAFTProductPlanState CatalogV1alpha1ProductPlanState = "draft"
+	ACTIVEProductPlanState CatalogV1alpha1ProductPlanState = "active"
+	DEPRECATEDProductPlanState CatalogV1alpha1ProductPlanState = "deprecated"
+	ARCHIVEDProductPlanState CatalogV1alpha1ProductPlanState = "archived"
 )
 
 // All allowed values of CatalogV1alpha1ProductPlanState enum
