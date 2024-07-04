@@ -21,10 +21,10 @@ type CatalogV1alpha1AssetState string
 
 // List of catalog.v1alpha1.AssetState
 const (
-	DRAFT CatalogV1alpha1AssetState = "draft"
-	ACTIVE CatalogV1alpha1AssetState = "active"
-	DEPRECATED CatalogV1alpha1AssetState = "deprecated"
-	ARCHIVED CatalogV1alpha1AssetState = "archived"
+	DRAFT_AssetState CatalogV1alpha1AssetState = "draft"
+	ACTIVE_AssetState CatalogV1alpha1AssetState = "active"
+	DEPRECATED_AssetState CatalogV1alpha1AssetState = "deprecated"
+	ARCHIVED_AssetState CatalogV1alpha1AssetState = "archived"
 )
 
 // All allowed values of CatalogV1alpha1AssetState enum

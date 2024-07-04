@@ -21,8 +21,8 @@ type CatalogV1alpha1ApplicationState string
 
 // List of catalog.v1alpha1.ApplicationState
 const (
-	ARCHIVED CatalogV1alpha1ApplicationState = "archived"
-	ARCHIVING CatalogV1alpha1ApplicationState = "archiving"
+	ARCHIVED_ApplicationState CatalogV1alpha1ApplicationState = "archived"
+	ARCHIVING_ApplicationState CatalogV1alpha1ApplicationState = "archiving"
 )
 
 // All allowed values of CatalogV1alpha1ApplicationState enum

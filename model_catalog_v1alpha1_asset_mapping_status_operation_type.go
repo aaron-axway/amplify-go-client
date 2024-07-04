@@ -21,9 +21,9 @@ type CatalogV1alpha1AssetMappingStatusOperationType string
 
 // List of catalog.v1alpha1.AssetMappingStatus.OperationType
 const (
-	CREATED CatalogV1alpha1AssetMappingStatusOperationType = "created"
-	UPDATED CatalogV1alpha1AssetMappingStatusOperationType = "updated"
-	DELETED CatalogV1alpha1AssetMappingStatusOperationType = "deleted"
+	CREATED_AssetMappingStatus_OperationType CatalogV1alpha1AssetMappingStatusOperationType = "created"
+	UPDATED_AssetMappingStatus_OperationType CatalogV1alpha1AssetMappingStatusOperationType = "updated"
+	DELETED_AssetMappingStatus_OperationType CatalogV1alpha1AssetMappingStatusOperationType = "deleted"
 )
 
 // All allowed values of CatalogV1alpha1AssetMappingStatusOperationType enum
