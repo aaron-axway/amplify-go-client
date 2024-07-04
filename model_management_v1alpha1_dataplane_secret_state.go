@@ -21,9 +21,9 @@ type ManagementV1alpha1DataplaneSecretState string
 
 // List of management.v1alpha1.DataplaneSecretState
 const (
-	ACTIVE ManagementV1alpha1DataplaneSecretState = "active"
-	DEPRECATED ManagementV1alpha1DataplaneSecretState = "deprecated"
-	ARCHIVED ManagementV1alpha1DataplaneSecretState = "archived"
+	ACTIVE_DataplaneSecretState ManagementV1alpha1DataplaneSecretState = "active"
+	DEPRECATED_DataplaneSecretState ManagementV1alpha1DataplaneSecretState = "deprecated"
+	ARCHIVED_DataplaneSecretState ManagementV1alpha1DataplaneSecretState = "archived"
 )
 
 // All allowed values of ManagementV1alpha1DataplaneSecretState enum
